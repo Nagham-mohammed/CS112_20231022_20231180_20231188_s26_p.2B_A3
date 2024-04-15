@@ -257,13 +257,7 @@ void crop_filter(){
             break;
         } else if (choice == "2") {
             //editted photo is a new photo
-            cout << "Please insert the name of the new photo: ";
-            getline(cin, editted);
-            for (char& c : editted) {
-                if (isalpha(c)) {
-                    c = tolower(c);
-                }
-            }
+
             //check if the name and extension of photo is true
             check_validation3();
             image2.saveImage(editted);
@@ -321,13 +315,6 @@ void resize_filter(){
                     break;
                 } else if (choice == "2") {
                     //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image2.saveImage(editted);
@@ -370,13 +357,6 @@ void save_image() {
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     check_validation3();
                     image1.saveImage(editted);
                     cout << "The image has been processed and saved successfully." << endl;
@@ -436,14 +416,6 @@ void red_filter(){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -521,14 +493,6 @@ void robertEdgeDetection(Image& image1, Image& outputImage) {
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     outputImage.saveImage(editted);
@@ -594,14 +558,6 @@ void blur(string filename){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -691,13 +647,6 @@ void merge_photo() {
                         cout << "The image has been processed and saved successfully." << endl;
                         break;
                     } else if (choice == "2") {
-                        cout << "Please insert the name of the new photo: ";
-                        getline(cin, editted);
-                        for (char& c : editted) {
-                            if (isalpha(c)) {
-                                c = tolower(c);
-                            }
-                        }
                         check_validation3();
                         image3.saveImage(editted);
                         cout << "The image has been processed and saved successfully." << endl;
@@ -751,13 +700,6 @@ void merge_photo() {
                         cout << "The image has been processed and saved successfully." << endl;
                         break;
                     } else if (choice == "2") {
-                        cout << "Please insert the name of the new photo: ";
-                        getline(cin, editted);
-                        for (char& c : editted) {
-                            if (isalpha(c)) {
-                                c = tolower(c);
-                            }
-                        }
                         check_validation3();
                         image3.saveImage(editted);
                         cout << "The image has been processed and saved successfully." << endl;
@@ -858,13 +800,6 @@ void darken_lighten() {
                     break;
                 } else if (choice == "2") {
                     //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -944,14 +879,6 @@ void purple_photo() {
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -1025,14 +952,6 @@ void GRAY_PHOTO() {
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -1104,14 +1023,6 @@ void Black_White(){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -1168,14 +1079,6 @@ Image invert_image(string filename) {
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -1235,14 +1138,6 @@ void Flip_up_down(){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -1303,14 +1198,6 @@ void Flip_right_left(){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -1386,16 +1273,7 @@ Image rotate_270(string filename){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    //check if the name and extension of photo is true
                     check_validation3();
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     image.saveImage(editted);
                     cout << "The image has been processed and saved successfully." << endl;
                     // Update filename to the new edited image filename
@@ -1452,14 +1330,6 @@ Image rotate_90_degree(string filename){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -1534,16 +1404,8 @@ Image rotate_180_degree(string filename) {
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
-                    check_validation();
+                    check_validation3();
                     image.saveImage(editted);
                     cout << "The image has been processed and saved successfully." << endl;
                     // Update filename to the new edited image filename
@@ -1631,16 +1493,8 @@ void sunlight(string filename){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
-                    check_validation();
+                    check_validation3();
                     image.saveImage(editted);
                     cout << "The image has been processed and saved successfully." << endl;
                     // Update filename to the new edited image filename
@@ -1897,14 +1751,6 @@ void Fancy_frame(string filename){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
@@ -2116,14 +1962,6 @@ void simple_frame(string filename){
                     cout << "The image has been processed and saved successfully." << endl;
                     break;
                 } else if (choice == "2") {
-                    //editted photo is a new photo
-                    cout << "Please insert the name of the new photo: ";
-                    getline(cin, editted);
-                    for (char& c : editted) {
-                        if (isalpha(c)) {
-                            c = tolower(c);
-                        }
-                    }
                     //check if the name and extension of photo is true
                     check_validation3();
                     image.saveImage(editted);
