@@ -5,9 +5,9 @@
 
 // the purpose of our program : itis used to edit some photos by getting photos from the directory or from the pc and check if the photo is available or not
 
-// link of diagram:
+// link of diagram:https://docs.google.com/presentation/d/1V64hN-_o0kn6K7GIZJeH_YqVEPEakKdz/edit?usp=sharing&ouid=111393241023154631783&rtpof=true&sd=true
 
-//link of github:
+//link of github:https://github.com/Nagham-mohammed/CS112_20231022_20231180_20231188_s26_p.2B_A3
 
 
 
@@ -105,19 +105,20 @@ void check_validation(){
 }
 void check_validation3(){
 
-    try {
-        // Check extension here and throw an exception if it's not valid
-        if (editted.substr(editted.find_last_of(".") + 1) != "tga" &&
-            editted.substr(editted.find_last_of(".") + 1) != "bmp" &&
-            editted.substr(editted.find_last_of(".") + 1) != "jpg" &&
-            editted.substr(editted.find_last_of(".") + 1) != "jpeg" &&
-            editted.substr(editted.find_last_of(".") + 1) != "png"){
-            throw invalid_argument("Invalid file extension or photo.");
-        }
-    } catch (const exception &e) {
-        cout << "Error: " << e.what()
-             << " Please provide a photo with .jpg, .jpeg, or .png extension." << endl;
+    while (true) {
+        cout << "Enter file name with extension: ";
+        cin >> editted;
 
+        // Check extension here and throw an exception if it's not valid
+        if (editted.substr(editted.find_last_of(".") + 1) == "tga" ||
+            editted.substr(editted.find_last_of(".") + 1) == "bmp" ||
+            editted.substr(editted.find_last_of(".") + 1) == "jpg" ||
+            editted.substr(editted.find_last_of(".") + 1) == "jpeg" ||
+            editted.substr(editted.find_last_of(".") + 1) == "png") {
+            break; // Valid extension, exit the loop
+        } else {
+            cout << "Invalid file extension or photo. Please provide a photo with .jpg, .jpeg, .bmp, .tga, or .png extension." << endl;
+        }
     }
 }
 void load_image(){
